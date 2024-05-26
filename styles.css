@@ -1,0 +1,95 @@
+html {
+    height: 100vh;
+}
+
+body {
+    height: 90%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    height: 30%;
+}
+
+header > .head {
+    font-weight: normal;
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2%;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    height: 68%;
+    gap: 1%;
+}
+
+.left {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    border-right: 1px solid rgb(146, 140, 140);
+}
+
+.left > div {
+    flex-basis: 33%;
+}
+
+.contact-list {
+    --icon-space: 1.3em;
+    list-style: none;
+    padding: 0;
+  }
+  
+.contact-list > li {
+    padding-left: var(--icon-space);
+}
+  
+.mail:before {
+    content: "\f0e0"; 
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+}
+
+.github:before {
+    content: "\f09b"; 
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+}
+
+.linkedin:before {
+    content: "\f08c"; 
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+}
+
+p {
+    margin: 4px 0px;
+}
+
+.right {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 2%;
+}
+
+.right > div {
+    flex-basis: 50%;
+}
+
